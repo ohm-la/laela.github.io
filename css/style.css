@@ -1,0 +1,385 @@
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
+
+:root {
+
+  /* Couleurs */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-navy: #003459;
+  --color-navy-50: rgba(0, 52, 89, 0.5);
+  --color-black-60: rgba(0, 0, 0, 0.6);
+
+  /* Typographie */
+  --font-display: 'VT323', monospace;
+  --font-body: 'Inter', sans-serif;
+
+  /* Échelle de tailles */
+  --text-h1: 4rem;
+  --text-h2: 2.5rem;
+  --text-h3: 1.5rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+
+  /* Espacements (base 8px) */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2.5rem;   /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-2xl: 6rem;    /* 96px */
+
+  /* Radius */
+  --radius: 0px;
+
+}
+
+/* ==========================================================================
+   ÉLÉMENTS DE BASE
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-weight: 200;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+
+p {
+  max-width: 65ch;
+  margin-bottom: var(--space-sm);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   LAYOUT / CONTENEUR
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: 1900px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+/* ==========================================================================
+   HEADER / NAV
+   ========================================================================== */
+
+header .logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: var(--space-md);
+}
+
+header nav a {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+header nav a:hover {
+  color: var(--color-navy);
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 30vw;
+  padding: var(--space-lg) var(--space-md);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-top p {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  max-width: 400px;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-bottom h1 {
+  font-family: var(--font-display);
+}
+
+.cta-group {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* ==========================================================================
+   BOUTONS — pilules, contour navy, fond transparent
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  padding: var(--space-xs) var(--space-lg);
+  border: 1.5px solid var(--color-navy);
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.btn-solid {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  border-radius: var(--radius);
+}
+
+.btn-voir-plus {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.btn-voir-plus:hover {
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+/* ==========================================================================
+   TITRES DE SECTION
+   ========================================================================== */
+
+.section-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-navy-50);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.section-title-alt {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--color-navy);
+}
+
+/* ==========================================================================
+   SECTION QUI SUIS-JE
+   ========================================================================== */
+
+.apropos-content {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+
+.apropos-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.apropos-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-color: #F5F5F5;
+}
+
+/* ==========================================================================
+   TIMELINE
+   ========================================================================== */
+
+.timeline {
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background-color: var(--color-navy);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-lg) + 0px);
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--color-navy);
+}
+
+.timeline-card {
+  border: 1.5px solid var(--color-navy);
+  border-radius: 24px;
+  padding: var(--space-md);
+}
+
+.pill {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--text-small);
+  border: 1px solid var(--color-navy);
+  border-radius: 999px;
+  padding: 0.2em 0.9em;
+  margin-right: var(--space-xs);
+}
+
+/* ==========================================================================
+   MARQUEE
+   ========================================================================== */
+
+.marquee {
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  padding-block: var(--space-xs);
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: var(--space-lg);
+  font-family: var(--font-display);
+  font-size: var(--text-small);
+  white-space: nowrap;
+}
+
+.marquee-track li::before {
+  content: "• ";
+}
+
+/* ==========================================================================
+   SECTION CTA (fond navy)
+   ========================================================================== */
+
+.cta-section {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding-block: var(--space-2xl);
+}
+
+.cta-section h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.cta-section .btn {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.cta-section .btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}
