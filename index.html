@@ -1,225 +1,305 @@
 <!DOCTYPE html>
-<html lang = "fr">
+<html lang="fr">
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width = device - width, initial scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laela Moukogho - UX/UI Designer & Front-end Developer</title>
-    <link rel="stylesheet" href="/home/raven/Documents/Porfolio/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="logo">Laela</div>
-            <ul>
-                <li> <a href="#accueil">Accueil</a> </li>
-                <li> <a href="#apropos"> A propos</a> </li>
-                <li> <a href= "#parcours"> Parcours</a></li>
-                <li> <a href="#contact"> Contact </a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="container">
+  <nav>
+    <div class="logo">Laela</div>
 
-    <section class="hero">
-       <img src="/home/raven/Documents/Porfolio/images/backgroung.svg" alt="" class="hero-bg">
-  <div class="hero-top">
-    <p>Designer UX/UI & Développeuse Front-end....</p>
-  </div>
-  <div class="hero-bottom">
-    <h1>Portfolio 2026</h1>
-    <div class="cta-group">
-      <a class="btn">Voir mes projets</a>
-      <a class="btn">Me contacter</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="nav-menu">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">A propos</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero">
+  <img src="images/backgroung.svg" alt="" class="hero-bg">
+
+  <div class="container hero-inner">
+    <div class="hero-top">
+      <p>Designer UX/UI &amp; Développeuse Front-end...</p>
+    </div>
+    <div class="hero-bottom">
+      <h1>Portfolio 2026</h1>
+      <div class="cta-group">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#contact" class="btn">Me contacter</a>
+      </div>
     </div>
   </div>
 </section>
 
-   <div class="marquee">
-  <ul class="marquee-track">
-    <li>Figma</li>
-    <li>HTML</li>
-    <li>Wordpress</li>
-    <li>CSS</li>
-    <li>Windows</li>
-    <li>IA Générative</li>
-    <li>JavaScript</li>
-    <li>Linux</li>
-  </ul>
-</div>
-
- <section id="apropos" class="container">
-  <h2 class="section-title">Qui suis-je ?</h2>
-
-  <div class="apropos-content">
-
-    <div class="apropos-text">
-      <p>Je suis OMANA MOUKOGHO Hyrvana Laela, designer UX/UI et développeuse front-end.</p>
-      <p>J'ai choisi de prendre du recul pour me spécialiser en design interactif et affiner ma vision : créer des interfaces à la fois belles et fonctionnelles, où chaque détail compte.</p>
-      <p>Titulaire d'une licence professionnelle obtenue à Sup'management-Gabon, j'ai acquis ma toute première expérience à l'Agence Nationale des Infrastructures Numériques et des Fréquences.</p>
-      <p>Mon approche ? Allier curiosité, empathie et technique pour concevoir des expériences qui résonnent avec les utilisateurs.</p>
-      <button class="btn-voir-plus" aria-expanded="false">Voir plus</button>
+    <div class="marquee">
+        <ul class="marquee-track">
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+        </ul>
     </div>
 
-    <img src="/home/raven/Documents/Porfolio/images/dessin.svg" alt="" class="apropos-img">
-
-  </div>
-
-</section>
-
-     <div class="marquee">
-  <ul class="marquee-track">
-    <li>Figma</li>
-    <li>HTML</li>
-    <li>Wordpress</li>
-    <li>CSS</li>
-    <li>Windows</li>
-    <li>IA Générative</li>
-    <li>JavaScript</li>
-    <li>Linux</li>
-  </ul>
-</div>
-
-    <section id="projets" class="container">
-        <h2> Projet</h2>
-        <article class="projet-card">
-        <h3>Site - Ambassade du Gabon au Maroc</h3>
-        <img src="/home/raven/Documents/Porfolio/images/ambassade.svg" alt="page d'accueil du site de l'ambassade du Gabon au Maroc">
-        <p>Dans le cadre de ma première expérience professionnelle à l'Agence Nationale des Infrastructures Numériques et des Fréquences, j'ai contribué à la refonte visuelle du site de l'Ambassade du Gabon au Maroc. </p>
-        <p>Ma mission portait sur la définition de la charte typographique et de la palette de couleurs, en respectant les codes d'une institution officielle tout en modernisant son identité visuelle.</p>
-        <p>un site plus cohérent visuellement, où la charte typographique et les couleurs reflètent à la fois le sérieux d'une institution officielle et une image plus contemporaine du Gabon à l'international</p>
-        <button class="btn-voir-plus" aria-expanded="false">Voir plus</button>
-        </article>
-
-    </section>
-
-     <div class="marquee">
-  <ul class="marquee-track">
-    <li>Figma</li>
-    <li>HTML</li>
-    <li>Wordpress</li>
-    <li>CSS</li>
-    <li>Windows</li>
-    <li>IA Générative</li>
-    <li>JavaScript</li>
-    <li>Linux</li>
-  </ul>
-</div>
-
-    <section id="parcours" class="container">
-        <h2>Parcours</h2>
-        <p class=" soustitre">Expériences & Formation</p>
-        <ol class="timeline">
-            <li class = "timeline-item">
-                <span class="periode">2026</span>
-                <h3> Master Informatique de Gestion</h3>
-                <p class="etablissement">Sup'management-Gabon , Libreville</p>
-                <ul class="tags">
-                    <li> Informatique</li>
-                    <li>Developpement</li>
-                </ul>
-            </li>
-        
-
-        <li class="timeline-item">
-            <span class="periode">2022-2025</span>
-            <h3> Licence professionnel Informatique </h3>
-            <p class="etablissement"> Sup'management-Gabon, Libreville</p>
-            <ul class="tags">
-                <li> Informatique</li>
-                <li>Gestion</li>
-            </ul>
-        </li>
-        <li class="timeline-item">
-            <span class="periode">2021-2022</span>
-            <h3>Baccalaureat Economique</h3>
-            <p class="etablissement"> Cours Privé Secondaire d'Angodjé , Libreville</p>
-            <ul class="tags">
-                <li> Economie</li>
-                <li> Litterature</li>
-            </ul>
-        </li>
-        </ol>
-    </section>
-
-     <div class="marquee">
-  <ul class="marquee-track">
-    <li>Figma</li>
-    <li>HTML</li>
-    <li>Wordpress</li>
-    <li>CSS</li>
-    <li>Windows</li>
-    <li>IA Générative</li>
-    <li>JavaScript</li>
-    <li>Linux</li>
-  </ul>
-</div>
-
-    <section id="avnt-contact" class="bruh-section">
-        <h2> UN PROJET À ME PROPOSER ?</h2>
-        <h3> Je suis disponible pour un stage, une collaboration</h3>
-        <div class="bruh-group">
-            <a href="#" class="bruh"> Telecharger mon CV</a>
-            <a href="#contact" class="bruh-outline"> Me contacter</a>
+    <section id="apropos" class="container" >
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <div class="apropos-content">
+            <div class="apropos-text">
+                <p>Je suis OMANA MOUKOGHO Hyrvana Laela, designer UX/UI et développeuse front-end.</p>
+                <p>J'ai choisi de prendre du recul pour me spécialiser en design interactif et affiner ma vision : créer des interfaces à la fois belles et fonctionnelles, où chaque détail compte.</p>
+                <p>Titulaire d'une licence professionnelle obtenue à Sup'management-Gabon, j'ai acquis ma toute première expérience à l'Agence Nationale des Infrastructures Numériques et des Fréquences.</p>
+                <p>Mon approche ? Allier curiosité, empathie et technique pour concevoir des expériences qui résonnent avec les utilisateurs.</p>
+                <button class="btn-voir-plus" aria-expanded="false" aria-controls="apropos-plus">Voir plus</button>
+            </div>
+            <img src="images/cosmos_1651934838.jpeg" alt="Illustration of workspace with computer and plants" class="apropos-img">
         </div>
     </section>
-    <section id="contact" class="contact-section">
 
-  <div class="contact-info">
-    <h2>Contact</h2>
-    <p class="contact-intro">Vous avez un projet qui mérite une interface à la fois belle et fonctionnelle ? Parlons-en.</p>
-    <p class="contact-dispo">Disponible pour un stage, une mission freelance ou une opportunité en entreprise. Je vous réponds sous 24 h.</p>
-
-    <div class="contact-email">
-      <h3>Email</h3>
-      <a href="mailto:hyrvanamoukogho@gmail.com">hyrvanamoukogho@gmail.com</a>
+    <div class="marquee">
+        <ul class="marquee-track">
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li><li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li><li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+        </ul>
     </div>
 
-    <div class="contact-social">
-      <h3>Réseaux sociaux</h3>
-      <ul class="social-list">
-        <li><a href="#" aria-label="Instagram">Instagram</a></li>
-        <li><a href="#" aria-label="Facebook">Facebook</a></li>
-        <li><a href="#" aria-label="GitHub">GitHub</a></li>
-        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
+   <section id="projets" class="container">
+  <h2 class="section-title-alt">Projet</h2>
 
-  <form class="contact-form" action="#" method="POST">
-    <h3>Formulaire de contact</h3>
+  <article class="projet-card">
+    <h3>Site - Ambassade du Gabon au Maroc</h3>
 
-    <div class="form-row">
-      <div class="form-group">
-        <label for="nom">Nom(s)</label>
-        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." required>
+    <div class="projet-content">
+      <img src="images/ambassade.svg" alt="Page d'accueil du site de l'Ambassade du Gabon au Maroc" class="projet-img">
+
+      <div class="projet-text">
+        <p>Dans le cadre de ma première expérience professionnelle à l'Agence Nationale des Infrastructures Numériques et des Fréquences, j'ai contribué à la refonte visuelle du site de l'Ambassade du Gabon au Maroc.</p>
+        <p>Ma mission portait sur la définition de la <strong>charte typographique</strong> et de la <strong>palette de couleurs</strong>, en respectant les codes d'une <strong>institution officielle</strong> tout en modernisant son identité visuelle.</p>
+        <p>un site plus cohérent visuellement, où la charte typographique et les couleurs reflètent à la fois le sérieux d'une institution officielle et une image plus <strong>contemporaine</strong> du Gabon à l'international.</p>
+        
+        <div id="projet-plus" hidden>
+          <p>Le résultat : un site plus cohérent visuellement, où la charte typographique et les couleurs reflètent à la fois le sérieux d'une institution officielle et une image plus contemporaine du Gabon à l'international.</p>
+        </div>
+
+        <button class="btn-voir-plus" aria-expanded="false" aria-controls="projet-plus">Voir plus</button>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Entrez votre email..." required>
-      </div>
     </div>
-
-    <div class="form-group">
-      <label for="sujet">Sujet<span class="required">*</span></label>
-      <input type="text" id="sujet" name="sujet" placeholder="Stage, collaboration, offre..." required>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Message<span class="required">*</span></label>
-      <textarea id="message" name="message" rows="5" placeholder="Expliquez ce que vous recherchez ou posez-moi une question tout simplement..." required></textarea>
-    </div>
-
-    <button type="submit" class="btn">Envoyer →</button>
-  </form>
-
+  </article>
 </section>
 
-    <footer>
-        <p>&copy; 2026 Laela Moukogho. Tous droits réservés.</p>
-    </footer>
+    <div class="marquee">
+        <ul class="marquee-track">
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+        </ul>
+    </div>
+
+    <section id="parcours" class="container">
+    <h2>Parcours</h2>
+    <p class="soustitre">Expérience & Formation.</p>
+    <ol class="timeline">
+        <li class="timeline-item">
+            <div class="timeline-card">
+                <span class="periode">2026-</span>
+                <h3>Master professionnel informatique</h3>
+                <p class="etablissement">Sup'management-Gabon, Libreville</p>
+                <ul class="tags">
+                    <li>Informatique</li>
+                    <li>Développement</li>
+                </ul>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-card">
+                <span class="periode">2022-2025</span>
+                <h3>Licence professionnelle informatique</h3>
+                <p class="etablissement">Sup'management-Gabon, Libreville</p>
+                <ul class="tags">
+                    <li>Informatique</li>
+                    <li>Gestion</li>
+                </ul>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-card">
+                <span class="periode">2021-2022</span>
+                <h3>Baccalauréat économique</h3>
+                <p class="etablissement">Cours Secondaire Privé d'Angodjé-Gabon, Libreville</p>
+                <ul class="tags">
+                    <li>Économie</li>
+                    <li>Littérature</li>
+                </ul>
+            </div>
+        </li>
+    </ol>
+</section>
+
+    <div class="marquee">
+        <ul class="marquee-track">
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+            <li>CSS</li>
+            <li>Windows</li>
+            <li>IA Générative</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+        </ul>
+    </div>
+
+    <section id="avnt-contact" class="pre-contact-section">
+        <h2>UN PROJET À ME PROPOSER ?</h2>
+        <h3>Je suis disponible pour un stage, une collaboration</h3>
+        <div class="pre-contact-buttons">
+             <a href="documents/laela-moukogho-cv.pdf" download class="pre-contact-btn">Télécharger mon CV</a>
+            <a href="#contact" class="pre-contact-btn-outline">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>Vous avez un projet qui mérite une interface à la fois belle et fonctionnelle ? Parlons-en.</p>
+            <p> <strong>Disponible pour un stage, une mission freelance ou une opportunité en entreprise. Je vous réponds sous 24 h.</strong></p>
+            <div class="contact-details">
+            <div class="contact-email">
+
+                <h3>Email</h3>
+                <a href="mailto:hyrvanamoukogho@gmail.com">hyrvanamoukogho@gmail.com</a>
+            </div>
+            <div class="contact-social">
+                <h3>Réseaux sociaux</h3>
+                <ul class="social-list">
+                    <li><a href="https://www.instagram.com/ohm_lae/" aria-label="Instagram"><i class="fa-brands fa-instagram" alt="logo instagram"></i></a></li>
+                    <li><a href="https://discordapp.com/users/1476252201033928916" aria-label="Discord"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://github.com/ohm-la" aria-label="GitHub"><i class="fa-brands fa-github" alt="logo github"></i></a></li>
+                    <li><a href="https://fr.pinterest.com/Laela_20/" aria-label="Pinterest"><i class="fa-brands fa-pinterest" alt="logo pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdekybwz" method="POST">
+            <h3>Formulaire de contact</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nom">Nom(s)</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email..." required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet<span class="required">*</span></label>
+                <input type="text" id="sujet" name="sujet" placeholder="Stage, collaboration, offre..." required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message<span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Expliquez ce que vous recherchez ou posez-moi une question tout simplement..." required></textarea>
+            </div>
+            <p class="form-status" role="status"></p>
+            <button type="submit" class="btn">Envoyer →</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 OMANA MOUKOGHO Hyrvana Laela. Tous droits réservés.</p>
+</footer>
+  <script src="jss/main.js"></script>
+  <script>document.documentElement.classList.add("js");</script>
 </body>
 </html>
